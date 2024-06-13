@@ -108,6 +108,6 @@
 # # Не забувай: нове значення змінної витісняє старе.
 
 
-language = 'Python'
-language = 'Pascal'
-print(language)
+# language = 'Python'
+# language = 'Pascal'
+# print(language)
