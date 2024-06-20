@@ -118,20 +118,96 @@
 
 
 # Зчитуємо ціле позитивне чотиризначне число
-number = input()
+# number = input()
 
 # Перевіряємо, що введене число дійсно чотиризначне
-if len(number) == 4 and number:
-    # Вилучаємо цифри числа
-    first_digit = int(number[0])
-    second_digit = int(number[1])
-    third_digit = int(number[2])
-    fourth_digit = int(number[3])
+# if len(number) == 4 and number:
+#     # Вилучаємо цифри числа
+#     first_digit = int(number[0])
+#     second_digit = int(number[1])
+#     third_digit = int(number[2])
+#     fourth_digit = int(number[3])
+#
+#     # Перевіряємо умову: сума першої та останньої цифр дорівнює різниці другої та третьої цифр
+#     if first_digit + fourth_digit == second_digit - third_digit:
+#         print("ДА")
+#     else:
+#         print("НІ")
+# else:
+#     print("НІ")
 
-    # Перевіряємо умову: сума першої та останньої цифр дорівнює різниці другої та третьої цифр
-    if first_digit + fourth_digit == second_digit - third_digit:
-        print("ДА")
-    else:
-        print("НЕТ")
-else:
-    print("НЕТ")
+
+# # Зчитуємо три числа з введення, кожне на окремому рядку
+# a = int(input())
+# b = int(input())
+# c = int(input())
+#
+# # Перевіряємо, чи є числа послідовними членами арифметичної прогресії
+# if b - a == c - b:
+#     print("YES")
+# else:
+#     print("NO")
+
+
+# # Вводимо чотири числа
+# a = int(input())
+# b = int(input())
+# c = int(input())
+# d = int(input())
+#
+# # Знаходимо найменше вручну
+# min_number = a
+#
+# if b < min_number:
+#     min_number = b
+# if c < min_number:
+#     min_number = c
+# if d < min_number:
+#     min_number = d
+#
+# # Виводимо результат
+# print(min_number)
+
+
+
+
+# # Вводим скільки тобі років
+# how_old = int(input())
+#
+# if 1 <= how_old <= 13:
+#     print("Детство")
+# if 14 <= how_old <= 24:
+#     print("Молодость")
+# if 25 <= how_old <= 59:
+#     print("Зрелость")
+# if 60 <= how_old:
+#     print("Старость")
+
+
+
+
+# Напишіть програму, яка зчитує три числа та підраховує суму лише позитивних чисел.
+# Формат вхідних даних
+# На вхід до програми подаються три цілих числа, кожне на новому рядку.
+# Формат вихідних даних
+# Програма має вивести одне число – суму позитивних чисел.
+# Примітка. Якщо позитивних чисел немає, слід вивести 0
+
+# Зчитуємо три числа
+a = int(input())
+b = int(input())
+c = int(input())
+
+# Ініціалізуємо суму позитивних чисел
+sum_positive = 0
+
+# Додаємо до суми лише позитивні числа
+if a > 0:
+    sum_positive += a
+if b > 0:
+    sum_positive += b
+if c > 0:
+    sum_positive += c
+
+# Виводимо результат
+print(sum_positive)
